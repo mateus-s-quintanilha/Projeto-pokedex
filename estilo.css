@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;   /* sempre use como config. básica, evita dor de cabeça, deixa todo o conteúdo harmonico (principalmente quando se usa padding) */
+}
+body {
+    background-color: lightblue;
+    font-family: "Poppins";
+    background-image: url(imagens/landscape2.jpeg);
+    background-position: center left;
+    background-size: cover;
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pokedex {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0px;
+}
+ul {
+    list-style: none;
+}
+.cartao-pokemon {
+    display: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.253);
+}
+.cartao-pokemon .cartao-topo {
+    
+    padding: 30px 40px 0px;
+}
+.cartao-pokemon .nome-pokemon {
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+.cartao-pokemon .tipo {
+    background-color: rgba(255, 255, 255, 0.781);
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+.cartao-pokemon .detalhes {
+    display: flex;
+    justify-content: space-between;   /* dei um espaço entre o código do pokemon e o seu nome */
+    align-items: center;              /* Diferença  entre justify-content e align-items: justify alinha horizontalmente, align alinha verticalmente*/
+    color: white;
+}
+.cartao-pokemon .cartao-imagem {
+    width: 350px;
+    height: 350px;
+}
+.cartao-pokemon img {
+    max-height: 100%;
+}
+.cartao-pokemon .cartao-informacoes {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 80px 30px 50px;
+    margin-top: -70px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.cartao-pokemon .cartao-informacoes h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.425);
+}
+.cartao-pokemon.aberto {
+    display: block;
+}
+
+.tipo-eletrico {
+    background-color: #FCC719;
+}
+.tipo-fogo {
+background-color: rgb(202, 91, 91);
+}
+.tipo-grama {
+    background-color: #49d0ae;
+}
+.tipo-agua {
+    background-color: rgb(140, 205, 226);
+}
+.tipo-sombra {
+    background-color: rgb(173, 15, 173);
+}
+.tipo-dragao {
+    background-color: teal;
+}
+
+.listagem {
+    max-width: 200px;
+}
+.listagem .pokemon {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 10px;
+background-color: #6b727A;
+color: white;
+padding: 0px 5px;
+cursor: pointer;      /* Põem aquela mãozinha de quando você passa o mouse emcima de algum link */
+border-top-left-radius: 30px;
+border-bottom-left-radius: 30px;
+min-height: 70px;
+transition: 0.15s ease-in-out;
+}
+.listagem .pokemon:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.listagem .pokemon img {
+    width: 25%;
+    border-radius: 50%;
+    
+}
+.listagem .pokemon span {
+    padding-right: 20px;
+}
+.listagem .pokemon.ativo {
+    background-color: tomato;
+}
+
+footer {
+    margin-top: 25px;
+    text-align: center;
+    background-color: wheat;
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    padding: 4px;
+    font-size: 17px;
+    font-style: italic;
+}
+footer a {
+    text-decoration: none;
+    color: darkslategray;
+}
+footer a:hover {
+    text-decoration: underline;
+}
